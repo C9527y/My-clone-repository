@@ -18,52 +18,57 @@ _Markdown 是一种轻量级纯文本标记语言。本课程我们将学习使�
 </header>
 
 <!--
-  <<< Author notes: Course start >>>
-  Include start button, a note about Actions minutes,
-  and tell the learner why they should take the course.
+  <<< Author notes: Step 1 >>>
+  Choose 3-5 steps for your course.
+  The first step is always the hardest, so pick something easy!
+  Link to docs.github.com for further explanations.
+  Encourage users to open new tabs for steps!
 -->
 
-## Welcome
+## Step 1: 添加标题
 
-GitHub 不仅仅是一个托管代码的地方，它是一个软件协作平台。凭借 Markdown 的轻量、易读易写的特性，我们在 GitHub 上用它来提出问题、发表评论、撰写文档等。
-通过 Markdown，我们可以很方便地添加标题、表格、代码块、图片和链接等元素，让内容更清晰丰富、层次分明。除了 GitHub 目前许多网站都广泛使用 Markdown，成为沟通与表达的首选语言。
+_欢迎来到 "Communicate using Markdown" 课程! :wave:_
 
-- **目标人群**: 初级开发者，GitHub 新用户和学生。
-- **学习内容**: 在评论或文件中使用 Markdown 添加列表、图片和链接。
-- **您将完成**：我们会修改一个纯文本文件，使用 Markdown 格式，你还可以把它作为自己 GitHub Pages 站点的起点。
-- **先决条件**：课程中会涉及 pull request 和文件编辑。如果你对这些还不熟悉，建议先学习 [GitHub 入门课程](https://github.com/skills/introduction-to-github)！
-- **学习时长**：不到一个小时
+**什么是 _Markdown_？** Markdown 是 GitHub 使用的一种[轻量级文本标记语言](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)。 
+你可以用它给文字添加标题、列表、**加粗**、_斜体_、表格以及其他样式。Markdown 可用在 GitHub 很多地方，包括：
 
+- [Issues](https://docs.github.com/issues/tracking-your-work-with-issues/about-issues), [Pull Requests](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests), 和 [Discussions](https://docs.github.com/discussions/collaborating-with-your-community-using-discussions/about-discussions) 中的评论
+- 扩展名为 `.md` or `.markdown` 的文件
+- 通过 [Gists](https://docs.github.com/github/writing-on-github/editing-and-sharing-content-with-gists/creating-gists) 分享代码或文本片段
 
-在本课程中，你将完成：
+**什么是 _标题_ ?** 标题是出现在某一部分开头的较大字号文字，和我们常用的 Word 类似一共分为六级。
 
-1. 添加标题
-2. 插入图片
-3. 添加代码示例
-4. 制作任务列表
-5. 合并你的 pull request
+### 语法示例
 
-### 如何开始课程
+```md
+# This is an `<h1>` header, which is the largest
 
-<!-- For start course, run in JavaScript:
-'https://github.com/new?' + new URLSearchParams({
-  template_owner: 'skills',
-  template_name: 'communicate-using-markdown',
-  owner: '@me',
-  name: 'skills-communicate-using-markdown',
-  description: 'My clone repository',
-  visibility: 'public',
-}).toString()
--->
+## This is an `<h2>` header
 
-[![start-course](https://user-images.githubusercontent.com/1221423/235727646-4a590299-ffe5-480d-8cd5-8194ea184546.svg)](https://github.com/new?template_owner=github-china&template_name=communicate-using-markdown&owner=%40me&name=skills-communicate-using-markdown&description=My+clone+repository&visibility=public)
+###### This is an `<h6>` header, which is the smallest
+```
 
-1. 右键点击上方 **Start course** 按钮，选择新标签页中打开链接。
-2. 在新页面中根据系统提示新建一个仓库。
-   - 仓库名称、描述这些字段系统已经帮我们自动填充好了，您可以按需修改。
-   - 建议使用选择公开仓库，因为私有仓库有[GitHub Actions 分钟数限制](https://docs.github.com/en/billing/managing-billing-for-github-actions/about-billing-for-github-actions)。
-   - 最后点击 Create repository 按钮
-3. 仓库创建完毕后，等待大约 20 秒（等待Action执行），然后刷新页面。注意是刷新您仓库的页面，不是本课程的页面。如果页面没有变化，请继续等待。然后按照 README 中的步骤一步步进行。
+#### 显示效果
+
+# 这是一个 `<h1>` 一级标题, 字号最大
+
+## 这是一个 `<h2>` 二级标题
+
+###### 这是一个 `<h6>` 标题, 字号最小
+
+### :keyboard: 实操环节: 在文件中添加标题
+
+1. 打开一个新的浏览器标签页，方便一边操作一边阅读本教程。
+2. 进入 **pull requests** tab页。
+3. 点击 **New pull request**，在对比分支中选择 `base: main` 和 `compare: start-markdown`。
+4. 点击 **Create pull request**。
+5. 在这个 pull request 中，进入 **Files changed** tab。我们已经为你创建了一个空文件 `index.md`。
+6. 在 `index.md` 的右上角三点 **...** 菜单中选择 **Edit file**。
+7. 在 **Edit file** 页面，为任意内容前加上一个 `#` 和一个空格，创建一个 H1 标题。你也可以根据需要使用一到六个 `#` 字符加空格来添加其他级别的标题。
+8. 在你写好的内容上方点击 **Preview** 查看预览效果。
+9. 页面底部填写一条简洁、有意义的提交说明，描述你对文件的修改。
+10. 点击 **Commit changes**。
+11. 等待大约20秒，然后刷新当前课程页面。[GitHub Actions](https://docs.github.com/en/actions) 会自动检测并进入下一步
 
 <footer>
 
